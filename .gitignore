@@ -1,0 +1,15 @@
+# Binaries
+apihub-setup
+apihub-setup-*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# Go
+vendor/
