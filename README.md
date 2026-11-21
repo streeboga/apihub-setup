@@ -38,6 +38,13 @@ go build -o apihub-setup ./cmd/apihub-setup
 
 ### 3. Run
 
+> **macOS:** If you see "file not opened" (Gatekeeper), run:
+> ```bash
+> xattr -d com.apple.quarantine apihub-setup-darwin-*
+> chmod +x apihub-setup-darwin-*
+> ```
+> Or: System Settings → Privacy & Security → "Open Anyway".
+
 ```bash
 # Configure all detected tools
 apihub-setup --token=YOUR_TOKEN
@@ -116,6 +123,13 @@ go build -o apihub-setup ./cmd/apihub-setup
 > ⚠️ Токен показывается только один раз. Сохраните его в безопасном месте.
 
 ### 3. Запустите
+
+> **macOS:** Если система говорит «файл не был открыт» (Gatekeeper), выполните:
+> ```bash
+> xattr -d com.apple.quarantine apihub-setup-darwin-*
+> chmod +x apihub-setup-darwin-*
+> ```
+> Или: Системные настройки → Конфиденциальность и безопасность → «Всё равно открыть».
 
 ```bash
 # Настроить все обнаруженные инструменты
